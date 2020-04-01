@@ -962,8 +962,8 @@
     "tags": "tool,gadgetbridge",
     "type": "app",
     "storage": [
-      {"name":"gbaudioc.app.js","url":"gbcaudioc.js"},
-      {"name":"gbaudioc.img","url":"gbcaudioc-icon.js","evaluate":true}
+      {"name":"gbaudioc.app.js","url":"gbaudioc.js"},
+      {"name":"gbaudioc.img","url":"gbaudioc-icon.js","evaluate":true}
     ]
   }
 ]
