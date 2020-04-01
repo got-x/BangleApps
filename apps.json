@@ -951,5 +951,19 @@
       {"name":"chrono.app.js","url":"chrono.js"},
       {"name":"chrono.img","url":"chrono-icon.js","evaluate":true}
     ]
+  },
+  {
+    "id": "gbaudioc",
+    "name": "Gadgetbridge Audio Control",
+    "shortName": "gbAudioControl",
+    "icon": "gbaudioc.png",
+    "version": "0.01",
+    "description": "A gadgetbride remote control for your smartphones audio player",
+    "tags": "tool,gadgetbridge",
+    "type": "app",
+    "storage": [
+      {"name":"gbaudioc.app.js","url":"gbcaudioc.js"},
+      {"name":"gbaudioc.img","url":"gbcaudioc-icon.js","evaluate":true}
+    ]
   }
 ]
