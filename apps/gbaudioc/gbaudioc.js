@@ -1,4 +1,4 @@
-function init() {
+function initializeApp() {
     display();
     setWatch(btn1, BTN1, {repeat:true});
     setWatch(btn2, BTN2, {repeat:true});
@@ -46,4 +46,4 @@ function display() {
     g.flip();
 }
 
-init();
+initializeApp();
