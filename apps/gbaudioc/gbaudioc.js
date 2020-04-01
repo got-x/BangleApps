@@ -1,13 +1,9 @@
 function init() {
-    setWatch(btn1, BTN1);
-    setWatch(btn2, BTN2);
-    setWatch(btn3, BTN3);
-    Bangle.on('touch', function(b) {
-      if (b == 1)
-        t1();
-      else
-        t2();
-    });
+    setWatch(btn1, BTN1, {repeat:true});
+    setWatch(btn2, BTN2, {repeat:true});
+    setWatch(btn3, BTN3, {repeat:true});
+    setWatch(t1, BTN4, {repeat:true});
+    setWatch(t2, BTN5, {repeat:true});
     display();
 }
 
@@ -20,20 +16,20 @@ function btn2() {
 function btn3() {
     Bluetooth.println(JSON.stringify({t:"info", msg:"btn3"}));
 }
-function t1() {
-    Bluetooth.println(JSON.stringify({t:"info", msg:"t1"}));
+function btn4() {
+    Bluetooth.println(JSON.stringify({t:"info", msg:"btn4"}));
 }
-function t2() {
-    Bluetooth.println(JSON.stringify({t:"info", msg:"t2"}));
+function btn5() {
+    Bluetooth.println(JSON.stringify({t:"info", msg:"btn5"}));
 }
 
 function display() {
     g.clear();
     g.setFontAlign(0,0); // center font
     g.setFont("Vector",30);
-    // draw the current counter value
-    g.drawString(gbAudicC, g.getWidth()/2, g.getHeight()/2);
-    // optional - this keeps the watch LCD lit up
+    // draw the current value
+    g.drawString("gbAudicC", g.getWidth()/2, g.getHeight()/2);
+    // this keeps the watch LCD lit up
     g.flip();
 }
 
