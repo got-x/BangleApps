@@ -12,27 +12,27 @@ var displayText = "gbAudicC";
 
 function btn1() {
     displayText = "btn1";
-    //Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
+    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
     display();
 }
 function btn2() {
     displayText = "btn2";
-    //Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
+    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
     display();
 }
 function btn3() {
     displayText = "btn3";
-    //Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
+    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
     display();
 }
 function btn4() {
     displayText = "btn4";
-    //Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
+    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
     display();
 }
 function btn5() {
     displayText = "btn5";
-    //Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
+    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
     display();
 }
 
