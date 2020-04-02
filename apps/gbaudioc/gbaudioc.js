@@ -13,27 +13,27 @@ var lastAction = "";
 
 function btn1() {
     lastAction = "volumneup";
-    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    Bluetooth.println(JSON.stringify({t:"music", n: lastAction}));
     refreshMessage();
 }
 function btn2() {
     lastAction = "play/pause";
-    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    Bluetooth.println(JSON.stringify({t:"music", n: lastAction}));
     refreshMessage();
 }
 function btn3() {
     lastAction = "volumedown";
-    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    Bluetooth.println(JSON.stringify({t:"music", n: lastAction}));
     refreshMessage();
 }
 function btn4() {
     lastAction = "previous";
-    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    Bluetooth.println(JSON.stringify({t:"music", n: lastAction}));
     refreshMessage();
 }
 function btn5() {
     lastAction = "next";
-    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    Bluetooth.println(JSON.stringify({t:"music", n: lastAction}));
     refreshMessage();
 }
 
