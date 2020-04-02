@@ -9,31 +9,36 @@ function initializeApp() {
 }
 
 var displayText = "gbAudicC";
+var lastAction = "";
 
 function btn1() {
-    displayText = "btn1";
-    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
-    display();
+    lastAction = "volumneup";
+    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    refreshMessage();
 }
 function btn2() {
-    displayText = "btn2";
-    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
-    display();
+    lastAction = "play/pause";
+    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    refreshMessage();
 }
 function btn3() {
-    displayText = "btn3";
-    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
-    display();
+    lastAction = "volumedown";
+    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    refreshMessage();
 }
 function btn4() {
-    displayText = "btn4";
-    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
-    display();
+    lastAction = "previous";
+    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    refreshMessage();
 }
 function btn5() {
-    displayText = "btn5";
-    Bluetooth.println(JSON.stringify({t:"info", msg: displayText}));
-    display();
+    lastAction = "next";
+    Bluetooth.println(JSON.stringify({t:"music", msg: lastAction}));
+    refreshMessage();
+}
+
+function refreshMessage() {
+    E.showMessage(lastAction,displayText);
 }
 
 function display() {
