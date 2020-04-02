@@ -8,12 +8,12 @@ function initializeApp() {
     display();
 }
 
-var displayText = "gbAudicC";
+var displayText = "gbAudioC";
 var lastAction = "";
 var play = true;
 
 function btn1() {
-    lastAction = "volumneup";
+    lastAction = "volumeup";
     Bluetooth.println(JSON.stringify({t:"music", n: lastAction}));
     refreshMessage();
 }
